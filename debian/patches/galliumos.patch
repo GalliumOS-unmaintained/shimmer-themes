@@ -1,0 +1,13 @@
+--- a/greybird/gtk-2.0/gtkrc
++++ b/greybird/gtk-2.0/gtkrc
+@@ -29,8 +29,8 @@
+ 	GtkWidget		::link-color				= @link_color
+ 	GtkWidget		::visited-link-color			= @text_color
+ 
+-	GtkButton		::child-displacement-x 			= 1
+-	GtkButton		::child-displacement-y 			= 1
++	GtkButton		::child-displacement-x 			= 0
++	GtkButton		::child-displacement-y 			= 0
+ 	GtkButton		::default-border       			= { 0, 0, 0, 0 }
+ 	GtkCheckButton		::indicator-size       			= 15
+ 

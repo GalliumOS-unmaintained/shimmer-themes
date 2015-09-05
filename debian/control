@@ -1,0 +1,84 @@
+Source: shimmer-themes
+Section: x11
+Priority: optional
+Maintainer: Xubuntu Developers <xubuntu-devel@lists.ubuntu.com>
+Build-Depends: debhelper (>= 9)
+Standards-Version: 3.9.6
+Homepage: http://shimmerproject.org/
+
+Package: shimmer-themes
+Architecture: all
+Depends: greybird-gtk-theme (>= 1.8.0), numix-gtk-theme (>= 1.8.0), 
+ ${misc:Depends}
+Suggests: albatross-gtk-theme, bluebird-gtk-theme, orion-gtk-theme, 
+ shimmer-wallpapers
+Breaks: xubuntu-artwork (<= 11.10.0), murrines-themes (<= 0.98.3)
+Replaces: xubuntu-artwork (<= 11.10.0), murrines-themes (<= 0.98.3)
+Description: Gtk+ themes from Shimmer Project
+ This package is a metapackage for the GTK themes by Shimmer Project.
+
+Package: albatross-gtk-theme
+Architecture: all
+Depends: gtk2-engines-murrine (>= 0.98), gtk2-engines-pixbuf (>= 2.24),
+ ${misc:Depends}
+Suggests: xfwm4 | metacity
+Replaces: shimmer-themes (<< 1.8.0)
+Breaks: shimmer-themes (<< 1.8.0)
+Description: Albatross GTK2 and GTK3 themes
+ This package contains the Alabtross GTK theme from Shimmer Project.
+ Albatross, a dark and light theme that was originally designed for
+ Xubuntu 9.10. Albatross is designed to be smooth: no rough borders,
+ no contrasted edges, no violent contrasts, a soft blue colour.
+
+Package: bluebird-gtk-theme
+Architecture: all
+Depends: gtk2-engines-murrine (>= 0.98), gtk2-engines-pixbuf (>= 2.24),
+ ${misc:Depends}
+Suggests: xfwm4 | metacity
+Replaces: shimmer-themes (<< 1.8.0)
+Breaks: shimmer-themes (<< 1.8.0)
+Description: Bluebird GTK2 and GTK3 themes
+ This package contains the Bluebird GTK theme from Shimmer Project.
+ Bluebird is the colorful successor to Albatross originally designed
+ for Xubuntu 10.10. Bluebird is the only way to go if you love blue!
+
+Package: greybird-gtk-theme
+Architecture: all
+Depends: gtk2-engines-murrine (>= 0.98), gtk2-engines-pixbuf (>= 2.24),
+ ${misc:Depends}
+Suggests: xfwm4 | metacity, xfce4-notifyd
+Replaces: shimmer-themes (<< 1.8.0)
+Breaks: shimmer-themes (<< 1.8.0)
+Description: Greybird GTK2 and GTK3 themes
+ This package contains the Greybird GTK theme from Shimmer Project.
+ Greybird is the more conservative but at the same time modern variant
+ of Bluebird. Greybird contains a lot of improvements over Bluebird;
+ amongst other things, full GTK3 support.
+
+Package: numix-gtk-theme
+Architecture: all
+Depends: gtk2-engines-murrine (>= 0.98),  ${misc:Depends}
+Suggests: xfwm4 | metacity, xfce4-notifyd
+Replaces: shimmer-themes (<< 1.8.0)
+Breaks: shimmer-themes (<< 1.8.0)
+Description: Numix GTK2 and GTK3 themes
+ This package contains the Numix GTK theme from Shimmer Project.
+ Numix is a modern flat theme with a combination of light and dark
+ elements.
+
+Package: orion-gtk-theme
+Architecture: all
+Depends: gtk2-engines-murrine (>= 0.98), ${misc:Depends}
+Suggests: xfwm4 | metacity
+Replaces: shimmer-themes (<< 1.8.0)
+Breaks: shimmer-themes (<< 1.8.0)
+Description: Orion GTK2 and GTK3 themes
+ This package contains the Orion GTK theme from Shimmer Project.
+ Orion is a modern light theme for Gnome.
+
+Package: shimmer-wallpapers
+Architecture: all
+Depends: ${misc:Depends}
+Description: Wallpapers from Shimmer Project
+ This package contains wallpapers assorted to each desktop theme from
+ Shimmer Project.

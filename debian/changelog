@@ -1,0 +1,339 @@
+shimmer-themes (1.9.4-1ubuntu1) vivid; urgency=medium
+
+  * a minor change to the gtk2 theme to disable button displacement when clicked
+
+ -- Hugh Greenberg <hugh@galliumos.org>  Fri, 04 Sep 2015 21:27:01 -0400
+
+shimmer-themes (1.9.4-0ubuntu2) vivid; urgency=medium
+
+  * debian/patches/greybird_no_symbolic_icons_in_sidebar.patch
+    - Add upstream patch to not use symbolic icons in gtk3 sidebars
+
+ -- Sean Davis <smd.seandavis@gmail.com>  Mon, 09 Mar 2015 21:27:01 -0400
+
+shimmer-themes (1.9.4-0ubuntu1) vivid; urgency=medium
+
+  * New theme release (Greybird:1.5.3)
+
+ -- Sean Davis <smd.seandavis@gmail.com>  Wed, 18 Feb 2015 20:48:40 -0500
+
+shimmer-themes (1.9.3-0ubuntu2) vivid; urgency=medium
+
+  * New theme release (Greybird:1.5.2)
+  * debian/*.docs
+    - Install theme READMEs
+  * debian/*.install
+    - Install theme index files
+
+ -- Sean Davis <smd.seandavis@gmail.com>  Wed, 11 Feb 2015 21:23:02 -0500
+
+shimmer-themes (1.9.2-0ubuntu1) vivid; urgency=medium
+
+  * New theme releases (Greybird:1.5.1, Numix:2.5.1)
+  * debian/greybird-gtk-theme.install:
+    - Install new Greybird-bright notification theme
+  * debian/control: Drop Bluebird and Orion to Suggusts
+
+ -- Sean Davis <smd.seandavis@gmail.com>  Tue, 20 Jan 2015 06:47:41 -0500
+
+shimmer-themes (1.9.1-0ubuntu1) vivid; urgency=medium
+
+  * Update Greybird from git to fix additional Gtk 3.14 issues
+
+ -- Sean Davis <smd.seandavis@gmail.com>  Tue, 23 Dec 2014 20:46:21 -0500
+
+shimmer-themes (1.9.0-0ubuntu1) vivid; urgency=medium
+
+  * Update Greybird from git to support Gtk 3.14
+  * debian/control: No change update to Standards-Version 3.9.6
+
+ -- Sean Davis <smd.seandavis@gmail.com>  Thu, 18 Dec 2014 22:27:36 -0500
+
+shimmer-themes (1.8.1-0ubuntu1) utopic; urgency=medium
+
+  * New theme releases (Bluebird:v1.2, Greybird:v1.4,
+    Numix:v2.3, Orion:v1.5))
+  * debian/control: Drop depends on albatross-gtk-theme
+  * debian/patches: 
+    - {bluebird,greybird,numix,orion}_fix_dialogs.patch dropped, GTK 3.12 is 
+      now default in utopic.
+
+ -- Sean Davis <smd.seandavis@gmail.com>  Sun, 03 Aug 2014 23:17:57 -0400
+
+shimmer-themes (1.8.0-0ubuntu1) utopic; urgency=medium
+
+  * Fix package upgrades from previous shimmer-themes (LP: #1347705)
+    - debian/control:
+      - Add Breaks and Replaces for shimmer-themes (<< 1.8.0)
+
+ -- Sean Davis <smd.seandavis@gmail.com>  Fri, 25 Jul 2014 08:15:06 -0400
+
+shimmer-themes (1.7.3-0ubuntu2) utopic; urgency=medium
+
+  * Separated themes into unique packages so individual themes can be
+    installed or removed.
+
+ -- Sean Davis <smd.seandavis@gmail.com>  Wed, 09 Jul 2014 22:22:32 -0400
+
+shimmer-themes (1.7.3-0ubuntu1) trusty; urgency=medium
+
+  [ Sean Davis ]
+  * New bugfix releases (Albatross:v1.7.3, Bluebird:v1.1.1,
+    Greybird:v1.3.4, Numix:v2.2.2, Orion:v1.4.2) (LP: #1298741)
+    - Fixes a graphical issue with latest indicator-sound.
+
+  [ Satyajit Sahoo ]
+  * debian/patches/{bluebird,greybird,numix}_fix_dialogs.patch: Fix spacing
+    between buttons for GTK 3.12 (LP: #1303937).
+
+ -- Sean Davis <smd.seandavis@gmail.com>  Thu, 27 Mar 2014 22:04:09 -0400
+
+shimmer-themes (1.7.2-0ubuntu1) trusty; urgency=medium
+
+  * New bugfix releases (Albatross:v1.7.2, Greybird:v1.3.3, 
+    Orion:v1.4.1, Numix:v2.2.1) (LP: #1294459)
+    - Provides a workaround for GNOME bug #710909
+    - Fixes (LP: #1277938)
+
+ -- Sean Davis <smd.seandavis@gmail.com>  Tue, 18 Mar 2014 23:12:50 -0400
+
+shimmer-themes (1.7.1-0ubuntu1) trusty; urgency=medium
+
+  * New releases of several themes (Albatross:v1.7, Bluebird:1.1,
+    Greybird:v1.3.2, Numix:v2.2, Orion:v1.4).
+    - Fixes (LP: #1268243, #1286838)
+  * debian/control
+    - Add gtk2-engines-pixbuf to Depends, required by Bluebird,
+      Fixes (LP: #1283630)
+  * debian/patches:
+    - orion_fix_abiwaord_rulers_page_bg.patch: dropped, included upstream.
+  * Update Standards-Version to 3.5
+
+ -- Sean Davis <smd.seandavis@gmail.com>  Wed, 12 Mar 2014 21:52:23 -0400
+
+shimmer-themes (1.7.0-0ubuntu1) trusty; urgency=medium
+
+  * New releases of several themes (Albatross:v1.6, Bluebird:v1.0,
+    Greybird:v1.3.1, Numix:v2.1).
+  * debian/patches:
+    - {bluebird,greybird}_fix_abiword_rulers_page_bg.patch: dropped, included
+      upstream.
+    - greybird_gtk_greeter_fix_pwd_context_menu.patch: dropped, also included
+      upstream.
+  * debian/shimmer-themes.install: install numix/xfce-notify-4.0 folder.
+
+ -- Lionel Le Folgoc <mrpouit@ubuntu.com>  Sat, 15 Feb 2014 13:24:02 +0100
+
+shimmer-themes (1.6.2-0ubuntu2) saucy; urgency=low
+
+  * Fix lightdm-gtk-greeter's password input field context menu (lp: #1227735):
+    - greybird_gtk_greeter_fix_pwd_context_menu.patch: added.
+  * Fix Abiword's black rulers and page background (lp: #1031137):
+    - {bluebird,greybird,orion}_fix_abiword_rulers_page_bg.patch: added.
+
+ -- Lionel Le Folgoc <mrpouit@ubuntu.com>  Sun, 29 Sep 2013 19:42:26 +0200
+
+shimmer-themes (1.6.2-0ubuntu1) saucy; urgency=low
+
+  * New release of all themes (LP: #1227402) (Albatross:v1.5.1, Bluebird:v0.9,
+    Greybird:v1.2.2, Numix:v2.0, Orion:v1.3).
+    - Add support for Granite widgets
+    - Add support for Gtk3.9
+    - Add support for Client-side decorations
+
+ -- Sean Davis <smd.seandavis@gmail.com>  Wed, 18 Sep 2013 18:55:28 -0400
+
+shimmer-themes (1.6.1-0ubuntu1) saucy; urgency=low
+
+  * New releases of all themes (Albatross:v1.4, Bluebird:v0.8,
+    Greybird:v1.2.1, Numix:v1.9, Orion:v1.2).
+  * Bugs fixed:
+    - Orion window decorations don't seem to render properly, lp: #1217604
+    - Albatross: Text color issue for new gnome menus, lp: #1185111
+    - GTK3 application themes broken with xubuntu 13.04 themes, lp: #1163128
+    - Weather applet has wrong text color in Albatross, lp: #1144538
+    - greybird - libreoffice 3.6.4 white ticks on white background, lp: #1092758
+    - Orion theme menus are very ugly in Gtk3, lp: #1217607
+  * Include patches for overlay scrollbar fix (lp: #1199707):
+    - debian/patches/bluebird_fix_overlay_scrollbar.patch,
+      debian/patches/greybird_fix_overlay_scrollbar.patch,
+      debian/patches/numix_fix_overlay_scrollbar.patch,
+      debian/patches/orion_fix_overlay_scrollbar.patch: added.
+
+ -- Lionel Le Folgoc <mrpouit@ubuntu.com>  Thu, 29 Aug 2013 10:43:51 +0200
+
+shimmer-themes (1.6.0-0ubuntu1) saucy; urgency=low
+
+  * Include new Numix theme (v1.8).
+  * Include new Orion theme (v1.1).
+  * Update Greybird to v1.1.1 and install its unity theme as well.
+  * Drop Blackbird theme.
+  * debian/copyright: refreshed.
+  * debian/patches/01_lightdm-gtk-greeter-compatibility.patch: dropped, won't
+    be needed with lightdm-gtk-greeter 1.6.x.
+
+ -- Lionel Le Folgoc <mrpouit@ubuntu.com>  Fri, 05 Jul 2013 20:08:25 +0200
+
+shimmer-themes (1.5.4-0ubuntu2) raring; urgency=low
+
+  * debian/patches/01_lightdm-gtk-greeter-compatibility.patch: added,
+    fix visual regressions in the greeter theming. lp: #1158431
+
+ -- Lionel Le Folgoc <mrpouit@ubuntu.com>  Tue, 16 Apr 2013 00:35:07 +0200
+
+shimmer-themes (1.5.4-0ubuntu1) raring; urgency=low
+
+  * New bugfix releases of all themes (Albatross:v1.3.2, Blackbird:v0.4,
+    Bluebird:v0.7.1, Greybird:v1.1).
+  * debian/patches/nautilus_3_4_support.patch: dropped, unneeded.
+  * debian/control: drop gtk3-engines-unico from Recommends, all themes
+    stopped using this engine for quite some time now.
+
+ -- Lionel Le Folgoc <mrpouit@ubuntu.com>  Wed, 20 Mar 2013 20:41:13 +0100
+
+shimmer-themes (1.5.3-0ubuntu1) quantal; urgency=low
+
+  * New bugfix releases of all themes (Albatross:v1.3.1, Blackbird:v0.3.3,
+    Bluebird:v0.6.2, Greybird:v1.0.7), including:
+    - improve the workaround for rendering issues with 1px pixmaps, lp #1043443
+  * debian/patches:
+    - nautilus_3_4_support.patch: updated to apply cleanly.
+
+ -- Lionel Le Folgoc <mrpouit@ubuntu.com>  Mon, 17 Sep 2012 21:08:59 +0200
+
+shimmer-themes (1.5.2-0ubuntu1) quantal; urgency=low
+
+  * New bugfix releases of all themes (Albatross:v1.3, Blackbird:v0.2,
+    Bluebird:v0.6.1, Greybird:v1.0.2), including:
+    - workaround for rendering issues with 1px pixmaps, lp #1043443
+  * debian/patches:
+    - nautilus_3_4_support.patch: added, revert nautilus 3.5 theming since
+      quantal ships 3.4. lp: #1043064
+
+ -- Lionel Le Folgoc <mrpouit@ubuntu.com>  Wed, 29 Aug 2012 20:10:51 +0200
+
+shimmer-themes (1.5.1-0ubuntu1) quantal; urgency=low
+
+  * Update Greybrid to latest tag (v1.0), including:
+    - indicator-messages icon downscaled. lp: #1041893
+    - fix lightdm-gtk-greeter theming and drop broken Greybird-lightdm
+      variant.
+    - slight tweaks for a more unified appearance with both gtk2 and gtk3
+      themes.
+  * debian/patches:
+    - 01_fix-grey-bg-on-button-labels-when-pressed.patch: dropped, applied
+      upstream.
+  * debian/shimmer-themes.links, debian/shimmer-themes.install: drop Greybird-
+    lightdm workaround.
+
+ -- Lionel Le Folgoc <mrpouit@ubuntu.com>  Wed, 29 Aug 2012 01:27:19 +0200
+
+shimmer-themes (1.5.0-0ubuntu2) quantal; urgency=low
+
+  * debian/patches:
+    - 01_fix-grey-bg-on-button-labels-when-pressed.patch: fix grey background
+      on button-labels when pressed. lp: #1035706
+
+ -- Lionel Le Folgoc <mrpouit@ubuntu.com>  Wed, 22 Aug 2012 21:12:18 +0200
+
+shimmer-themes (1.5.0-0ubuntu1) quantal; urgency=low
+
+  * Update Greybird to latest tag (v0.9). lp: #924853,#947436,#982820,#1016713
+  * Update Bluebird to latest tag (v0.6). lp: #686239,#977431
+  * Update Albatross to latest tag (v1.2). lp: #989814,#1023056
+  * debian/control: demote gtk3-engines-unico to recommends as most themes
+    are now engine-free.
+  * debian/shimmer-wallpapers.install: update paths, wallpapers are in their
+    own branch/subtarball now.
+  * debian/shimmer-themes.install: ship Albatross' metacity theme.
+  * debian/shimmer-themes.links: drop greybird -> Greybird compatibility
+    symlinks. lp: #985320
+
+ -- Lionel Le Folgoc <mrpouit@ubuntu.com>  Sat, 28 Jul 2012 22:28:31 +0200
+
+shimmer-themes (1.4.0-0ubuntu1) quantal; urgency=low
+
+  * Update Greybird to latest tag (v0.8.2).
+  * Update Bluebird to latest tag (v0.5).
+  * Include new experimental dark variant Blackbird (v0.1).
+  * debian/shimmer-themes.install: install Blackbird files.
+  * debian/control:
+    - bumped Standards-Version to 3.9.3.
+    - added Blackbird to the long desc.
+
+ -- Lionel Le Folgoc <mrpouit@ubuntu.com>  Tue, 22 May 2012 21:58:46 +0200
+
+shimmer-themes (1.3.0-0ubuntu1) precise; urgency=low
+
+  * Update greybird to the v0.7.1 tag (bugfix).
+  * Update bluebird from git master (gtk+3 theme rebased against greybird to
+    benefit from all bugfixes, lp: #969252).
+
+ -- Lionel Le Folgoc <mrpouit@ubuntu.com>  Fri, 30 Mar 2012 22:37:30 +0200
+
+shimmer-themes (1.2.2-0ubuntu1) precise; urgency=low
+
+  * Update greybird to the v0.7 tag:
+    - fix style of several gtk+3 widgets: scale, spinbuttons (lp: #956240),
+      comboboxes.
+  * debian/patches:
+    - 01_fix-gtk3.3-warnings.patch: dropped, included upstream.
+
+ -- Lionel Le Folgoc <mrpouit@ubuntu.com>  Wed, 21 Mar 2012 23:38:04 +0100
+
+shimmer-themes (1.2.1-0ubuntu2) precise; urgency=low
+
+  * debian/patches:
+    - 01_fix-gtk3.3-warnings.patch: fix some warnings displayed when launching
+      apps from a terminal. lp: #954860
+
+ -- Lionel Le Folgoc <mrpouit@ubuntu.com>  Sat, 17 Mar 2012 17:10:38 +0100
+
+shimmer-themes (1.2.1-0ubuntu1) precise; urgency=low
+
+  * Updated greybird to the v0.6 tag:
+    - fix gtk3 link color. lp: #948123
+    - fix a few issues with gtk2 resize grips.
+    - split lightdm-gtk-greeter's theming into its own theme to allow for
+      more fine-tuning without impacting the desktop theme.
+  * debian/shimmer-themes.install: add lightdm folder.
+  * debian/shimmer-themes.links: add a symlink for Greybird-lightdm.
+
+ -- Lionel Le Folgoc <mrpouit@ubuntu.com>  Tue, 13 Mar 2012 18:56:02 +0100
+
+shimmer-themes (1.2-0ubuntu1) precise; urgency=low
+
+  * Updated greybird to the v0.5 git tag, which should fix all remaining
+    issues with latest unico/gtk3.3 (hopefully), including:
+    - fix yelp appearance (invisible fonts) lp: #944888
+    - fix black background in nautilus browsing area lp: #940850
+    - revert serif font in xfce header lp: #943354
+  * debian/patches:
+    - 01_greybird-gtk3.3-fixes.patch: dropped, included upstream.
+
+ -- Lionel Le Folgoc <mrpouit@ubuntu.com>  Tue, 06 Mar 2012 00:21:12 +0100
+
+shimmer-themes (1.1-0ubuntu3) precise; urgency=low
+
+  * debian/patches:
+    - 01_greybird-gtk3.3-fixes.patch: refreshed with the latest upstream commits
+      to fix drop-down menus colors. lp: #934883
+
+ -- Lionel Le Folgoc <mrpouit@ubuntu.com>  Thu, 23 Feb 2012 19:24:08 +0100
+
+shimmer-themes (1.1-0ubuntu2) precise; urgency=low
+
+  * debian/shimmer-themes.links: added, provides compatibility links for older
+    Greybird versions.
+  * debian/patches:
+    - 01_greybird-gtk3.3-fixes.patch: added, includes fixes for gtk+3.0 >= 3.3
+      and latest unico version in precise.
+
+ -- Lionel Le Folgoc <mrpouit@ubuntu.com>  Sun, 19 Feb 2012 12:38:35 +0100
+
+shimmer-themes (1.1-0ubuntu1) precise; urgency=low
+
+  * Initial release, split Shimmer Project themes from murrine-themes
+    (Albatross [a4c586d], Bluebird [2713c7e], Greybird [7915c3e]).
+
+ -- Lionel Le Folgoc <mrpouit@ubuntu.com>  Sun, 05 Feb 2012 22:48:30 +0100

@@ -1,0 +1,7 @@
+numix/index.theme usr/share/themes/Numix
+numix/gtk-* usr/share/themes/Numix
+numix/metacity-1 usr/share/themes/Numix
+numix/openbox-3 usr/share/themes/Numix
+numix/unity usr/share/themes/Numix
+numix/xfwm4 usr/share/themes/Numix
+numix/xfce-notify-4.0 usr/share/themes/Numix

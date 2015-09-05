@@ -1,0 +1,22 @@
+Description: Fix overlay scrollbar
+ If overlay scrollbar is enabled, the background turns to black at some places,
+ causing text to be unreadable due to dark text on black background.
+Author: Satyajit Sahoo <satyajit.happy@gmail.com>
+Bug-Ubuntu: https://bugs.launchpad.net/bugs/1199707
+Forwarded: not-needed
+
+--- a/greybird/gtk-3.0/gtk-widgets.css
++++ b/greybird/gtk-3.0/gtk-widgets.css
+@@ -61,6 +61,12 @@
+     color: @theme_fg_color;
+ }
+ 
++* {
++    /* inherit colors from parent */
++    color: inherit;
++    background-color: inherit;
++}
++
+ *:selected,
+ *:selected:focus {
+     background-color: @theme_selected_bg_color;
